@@ -1,0 +1,95 @@
+body {
+    font-family: 'REM', sans-serif;
+}
+.box_kubek_moj {
+    background-color: whitesmoke;
+    max-width: 200px;
+    border: 1px blueviolet;
+    border-style: dashed;
+    padding: 15px 20px;
+    border-radius: 4px;
+
+    
+}
+button {
+    padding: 10px 15px;
+    background: rgb(255, 225, 0);
+    color: #000;
+    border: 1px dashed #262626;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+button:hover {
+    background-color: rgb(255, 247, 0);
+}
+button:active {
+    background-color: rgb(229, 229, 0);
+    transform: scale(.98);
+}
+button:focus {
+    border: 1.5px dashed red;
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    cursor: pointer;
+    transition: all .2s;
+}
+input[type="checkbox"]:checked {
+    background-color: #dbdbdb;
+    border-color: orange;
+    border-radius: .15rem .50rem .50rem .15rem;
+}
+.box_border {
+    max-width: 200px;
+    border: 1px solid #bdbdbb;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 14px 0 rgba(32, 32, 32, 0.194);
+    border-radius: 5px;
+}
+.box_border a {
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.box_border a:hover {
+    background: whitesmoke;
+}
+img {
+    max-width: 300px;
+}
+section#lewy {
+    float: left;
+}
+section#prawy {
+    float: left;
+}
+section#glowny {
+    float: left;
+}
+#cena_section {
+    clear: both;
+    text-align: -webkit-center;
+}
+#cena_calosc {
+    border: 1px solid rgb(60, 60, 60);
+    padding: 30px;
+    text-align: center;
+    max-width: 150px;
+    border-radius: 20px;
+    font-size: 28px;
+    line-height: normal;
+}
+.hidden { display: none !important; visibility: 0; opacity: 0; }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubble tea</title>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <section id="lewy">
+        <!-- Rodzaj herbaty, oraz rabat -->
+
+        <div id="rodzaj_herbaty">
+
+            <button onclick="pokaz_chowaj_div_pod_button('rodzaj_div')">
+                Rodzaj herbaty
+            </button>
+            <div class="box_border" id="rodzaj_div">
+                <a>Czarna</a>
+                <a>Zielona</a>
+                <a>Biała</a>
+            </div>
+        </div>
+        <div class="box_kubek_moj">
+
+            <input type="checkbox" class="styled-checkbox" id="moj_kubek" value="1">
+            <label for="moj_kubek">
+                
+                <b>Mam własny kubek</b>
+                <br>
+                <center>
+                    (<u>10% rabatu</u>)
+                </center>
+            
+            </label>
+        </div>
+    </section>
+    <section id="glowny">
+        <!-- Kubek -->
+        <img src="kubek-brazowy.png">
+    </section>
+    <section id="prawy">
+        <!-- Rozmiar itp -->
+    </section>
+
+    <section id="cena_section">
+        <div id="cena_calosc"> 16 zł </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
