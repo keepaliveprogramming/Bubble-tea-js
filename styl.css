@@ -67,8 +67,9 @@ input[type="checkbox"]:checked {
     border: 1px solid #bdbdbb;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 14px 0 rgba(32, 32, 32, 0.194);
+    /*box-shadow: 0 0 14px 0 rgba(32, 32, 32, 0.194);*/
     border-radius: 5px;
+    text-align: left;
 }
 .box_border a {
     padding: 7px 15px;
