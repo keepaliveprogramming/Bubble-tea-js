@@ -4,12 +4,14 @@ body {
 .box_kubek_moj {
     background-color: whitesmoke;
     max-width: 200px;
-    border: 1px blueviolet;
+    border: 1px black;
     border-style: dashed;
     padding: 15px 20px;
     border-radius: 4px;
-
-    
+    margin-top: 10px;
+}
+.text-center {
+    text-align: center;
 }
 button {
     padding: 10px 15px;
@@ -19,9 +21,16 @@ button {
     border-radius: 4px;
     font-weight: 500;
     font-size: 21px;
-    margin: 10px 0;
+    
     cursor: pointer;
     transition: all .2s;
+    min-width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button ~ button {
+    margin: 10px 0 0;
 }
 button:hover {
     background-color: rgb(255, 247, 0);
@@ -49,11 +58,12 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked {
     background-color: #dbdbdb;
-    border-color: orange;
-    border-radius: .15rem .50rem .50rem .15rem;
+    border-color: red;
+    border-radius: 1rem 1rem .1rem 1rem;
+    transform: rotate(-35deg);
 }
 .box_border {
-    max-width: 200px;
+    max-width: 197px;
     border: 1px solid #bdbdbb;
     display: flex;
     flex-direction: column;
@@ -63,21 +73,35 @@ input[type="checkbox"]:checked {
 .box_border a {
     padding: 7px 15px;
     cursor: pointer;
+    transition: all .2s;
 }
 .box_border a:hover {
-    background: whitesmoke;
+    background: #dfdfdf;
+}
+.box_border a:active {
+    transform: scale(.98);
 }
 img {
     max-width: 300px;
 }
+
 section#lewy {
     float: left;
+    width: 33.3%;
+    text-align: -webkit-center;
+
 }
 section#prawy {
     float: left;
+    width: 33.3%;
+    text-align: -webkit-center;
+
 }
 section#glowny {
     float: left;
+    width: 33.3%;
+    text-align: -webkit-center;
+
 }
 #cena_section {
     clear: both;
@@ -93,3 +117,16 @@ section#glowny {
     line-height: normal;
 }
 .hidden { display: none !important; visibility: 0; opacity: 0; }
+.kwadracik {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #000;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.closed {
+    transform: rotate(90deg);
+}

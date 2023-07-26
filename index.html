@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-
+    
+    <h1 class="text-center">Stwórz swój własny doskonały napój<br> za pomocą konfiguratora <u>Bubble tea</u></h1>
+    
+    
     <section id="lewy">
         <!-- Rodzaj herbaty, oraz rabat -->
 
         <div id="rodzaj_herbaty">
 
-            <button onclick="pokaz_chowaj_div_pod_button('rodzaj_div')">
+            <button onclick="pokaz_chowaj_div_pod_button('trojkat_rodzaj_herbaty', 'rodzaj_div')">
                 Rodzaj herbaty
+                <span id="trojkat_rodzaj_herbaty" class="kwadracik"></span>
             </button>
             <div class="box_border" id="rodzaj_div">
-                <a>Czarna</a>
-                <a>Zielona</a>
-                <a>Biała</a>
+                <a data-rodzaj="czarna">Czarna</a>
+                <a data-rodzaj="zielona">Zielona</a>
+                <a data-rodzaj="biala">Biała</a>
             </div>
         </div>
         <div class="box_kubek_moj">
@@ -42,6 +46,50 @@
     </section>
     <section id="prawy">
         <!-- Rozmiar itp -->
+        <button onclick="pokaz_chowaj_div_pod_button('trojkat_rozmiar', 'rozmiar_div')">
+            Rozmiar
+            <span id="trojkat_rozmiar" class="kwadracik closed"></span>
+        </button>
+        <div class="box_border hidden" id="rozmiar_div">
+            <a data-rodzaj="czarna">Zwykły kubek</a>
+            <a data-rodzaj="zielona">Powiększony kubek</a>
+            <a data-rodzaj="biala">Biała</a>
+        </div>
+
+
+        <!-- Baza bubble tea -->
+        <button onclick="pokaz_chowaj_div_pod_button('trojkat_baza', 'baza_div')">
+            Baza
+            <span id="trojkat_baza" class="kwadracik closed"></span>
+        </button>
+        <div class="box_border hidden" id="baza_div">
+            <a data-rodzaj="czarna">Zwykły kubek</a>
+            <a data-rodzaj="zielona">Powiększony kubek</a>
+            <a data-rodzaj="biala">Biała</a>
+        </div>
+
+        <!-- Syrop bubble tea -->
+        <button onclick="pokaz_chowaj_div_pod_button('trojkat_syrop', 'syrop_div')">
+            Syrop
+            <span id="trojkat_syrop" class="kwadracik closed"></span>
+        </button>
+        <div class="box_border hidden" id="syrop_div">
+            <a data-rodzaj="czarna">Zwykły kubek</a>
+            <a data-rodzaj="zielona">Powiększony kubek</a>
+            <a data-rodzaj="biala">Biała</a>
+        </div>
+
+
+         <!-- Dodatek bubble tea -->
+         <button onclick="pokaz_chowaj_div_pod_button('trojkat_dodatek', 'dodatek_div')">
+            Dodatek
+            <span id="trojkat_dodatek" class="kwadracik closed"></span>
+        </button>
+        <div class="box_border hidden" id="dodatek_div">
+            <a data-rodzaj="czarna">Zwykły kubek</a>
+            <a data-rodzaj="zielona">Powiększony kubek</a>
+            <a data-rodzaj="biala">Biała</a>
+        </div>
     </section>
 
     <section id="cena_section">
